@@ -1,0 +1,80 @@
+/* src/styles/fonts.css */
+
+@font-face {
+  font-family: 'Good-Sans';
+  /* 📂 Exact filename case-sensitive match */
+  src: url('./fonts/Good Sans/GTFGoodSansTRIAL-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Silka-Mono';
+  /* 📂 Exact filename case-sensitive match */
+  src: url('./fonts/Silka-Mono/SilkaMono-Medium.otf') format('opentype');
+  font-weight: 500; /* Set to 500 since it's a Medium weight file */
+  font-style: normal;
+}
+
+:root {
+  --font-serif: 'EB Garamond', 'Times New Roman', serif;
+}
+
+/* html, body {
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+} */
+
+.tracking-wider-xl { letter-spacing: 0.18em; }
+
+/* Registering the precise names into Tailwind v4 */
+@theme {
+  --font-good-sans: 'Good-Sans', sans-serif;
+  --font-silka-mono: 'Silka-Mono', monospace;
+}
+
+.product-description-html {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Body paragraphs — regular weight, clear gap between each */
+.product-description-html p {
+  margin: 0 0 1.1em 0;
+  opacity: 0.85;
+}
+.product-description-html p:last-child {
+  margin-bottom: 0;
+}
+
+/* Headings like "Dates:" — large and bold, with breathing room above */
+.product-description-html h1,
+.product-description-html h2,
+.product-description-html h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1.6em 0 0.6em 0;
+  opacity: 1;
+}
+.product-description-html h1:first-child,
+.product-description-html h2:first-child,
+.product-description-html h3:first-child {
+  margin-top: 0;
+}
+
+/* Inline bold inside sentences — "Manyaku Mashilo", "Kkerelé", etc. */
+.product-description-html strong,
+.product-description-html b {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.product-description-html ul,
+.product-description-html ol {
+  margin: 0.5em 0 1.1em 1.2em;
+  opacity: 0.85;
+}
+.product-description-html a {
+  text-decoration: underline;
+}

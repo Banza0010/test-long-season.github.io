@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Move @source directives to the top if supported, 
+   but ideally handle these in your tailwind.config.ts or via CLI args */
+@source "../**/*.{js,ts,jsx,tsx}";
+
+@import "tw-animate-css";
+@import "./fonts.css";
